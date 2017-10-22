@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Documentation and CLI for building a JavaScript module to run in AWS Lambda.",
   "bin": {
-    "build-for-lambda": "./index.js"
+    "build-for-lambda": "./bin.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/saibotsivad/build-for-lambda#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
     "minimist": "^1.2.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
