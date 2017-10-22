@@ -71,10 +71,12 @@ module.exports = ({ input, output, name }) => {
                 babelrc: false,
                 presets: [
                     [
-                        // npm install --save-dev babel-preset-es2015
-                        'es2015',
+                        // npm install --save-dev babel-preset-env
+                        'env',
                         {
-                            modules: false
+                            targets: {
+                                node: '6.10'
+                            }
                         }
                     ]
                 ],
