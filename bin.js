@@ -1,4 +1,4 @@
-#!/user/env node
+#!/usr/bin/env node
 
 const minimist = require('minimist')
 const rollup = require('./rollup-configuration.js')
