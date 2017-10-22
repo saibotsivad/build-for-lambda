@@ -76,7 +76,11 @@ module.exports = ({ input, output, name }) => {
                         {
                             targets: {
                                 node: '6.10'
-                            }
+                            },
+                            // the babel transform will turn ES6 modules into
+                            // CommonJS modules, which undoes the work RollupJS
+                            // needs to do, so we don't transform the module types
+                            modules: false
                         }
                     ]
                 ],
