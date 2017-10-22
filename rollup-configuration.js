@@ -68,6 +68,7 @@ module.exports = ({ input, output, name }) => {
                 babelrc: false,
                 presets: [
                     [
+                        // npm install --save-dev babel-preset-es2015
                         'es2015',
                         {
                             modules: false
@@ -75,6 +76,7 @@ module.exports = ({ input, output, name }) => {
                     ]
                 ],
                 plugins: [
+                    // npm install --save-dev babel-plugin-external-helpers
                     'external-helpers'
                 ]
             })
