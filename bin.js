@@ -5,8 +5,8 @@ const rollup = require('./rollup-configuration.js')
 
 const argv = minimist(process.argv.slice(2))
 const option = {
-	input: argv.input || argv.i,
-	output: argv.output || argv.o,
+	input: argv.in || argv.i,
+	output: argv.out || argv.o,
 	name: argv.name || argv.n
 }
 
