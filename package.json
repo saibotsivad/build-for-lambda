@@ -1,0 +1,30 @@
+{
+  "name": "build-for-lambda",
+  "version": "0.0.0",
+  "description": "Documentation and CLI for building a JavaScript module to run in AWS Lambda.",
+  "bin": {
+    "build-for-lambda": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saibotsivad/build-for-lambda.git"
+  },
+  "keywords": [
+    "lambda",
+    "aws"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/saibotsivad/build-for-lambda/issues"
+  },
+  "homepage": "https://github.com/saibotsivad/build-for-lambda#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.4",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
