@@ -1,6 +1,6 @@
 {
   "name": "build-for-lambda",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Documentation and CLI for building a JavaScript module to run in AWS Lambda.",
   "bin": {
     "build-for-lambda": "./bin.js"
