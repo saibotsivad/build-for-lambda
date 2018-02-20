@@ -8,10 +8,6 @@ module.exports = ({ input, output, name }) => {
 	const rollupOptions = {
 		// the input parameter is your main Lambda module file
 		input,
-		// normally you would want to export a default function from
-		// a JS module, but Lambdas are all named exports, so we hide
-		// the RollupJS warning related to this
-		exports: 'named',
 		plugins:[
 			// if you `require('./some.json')` in RollupJS you
 			// will need the JSON plugin
@@ -111,6 +107,10 @@ module.exports = ({ input, output, name }) => {
 		.rollup(rollupOptions)
 		.then(bundle => bundle.write({
 			file: output,
+			// normally you would want to export a default function from
+			// a JS module, but Lambdas are all named exports, so we hide
+			// the RollupJS warning related to this
+			exports: 'named',
 			// the output file format needs to be CommonJS to be
 			// runnable as an AWS Lambda
 			format: 'cjs',
